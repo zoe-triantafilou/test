@@ -2,55 +2,108 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+    <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;300;500;600;700&display=swap" rel="stylesheet">
+
     <title>Zoe's Portfolio Website</title>
       <style>
-        
+        #centerwrapper {text-align:left;width: 100px;margin-left:auto;margin-right:auto;}
+        *{position:absolute;}
         body{ /*css comment*/
             background-color: rgba(48, 116, 115, 1);
         }
-        img{
-            position: absolute;
-            width: 450px;
-            height: 450px;
-            left: 165px;
-            top: 275px;
+        .topnav{
+            background-color: rgba(228, 146, 115, 1);
+
+            
+        }
+        #img1{
+            width: 350px;
+            height: 350px;
+            margin-top: 205px;
+            margin-left: 335px;
+
+            border-radius: 50%;  
+        }
+        #img2{
+            width: 225px;
+            height: 225px;
+            margin-top: 455px;
+            margin-left: 900px;
+
+            border-radius: 50%;
             border-style: solid;
-            border-width: 5px;
-            border-color: red;
+            border-width: 4px;
+            border-color: rgba(163, 122, 116, 1);
+        }
+        .headertext{
+            color: rgba(245, 245, 245, 1);
+
+            font-family: 'Encode Sans';
+            font-style: normal;
+        }
+        h3{
+            width: 102px;
+            padding:0px;
+            border:0px;
+            margin-top: 322px;
+            margin-left: 694px;
+
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
         }
         h1{
-            color: rgba(245, 245, 245, 1);
             width: 266px;
             padding: 0px;
             border: 0px;
-            margin: 357px 454px 378px 720px;
-        }
+            margin-top: 357px;
+            margin-left: 720px;
+            margin-right: 454px;
 
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 45px;
+        }
+        p{
+            width:400px;
+            padding: 0px;
+            border: 0px;
+            margin-top: 575px;
+            margin-left: 547px;
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+        }
       </style>
   </head>
   
-  <body> <!--html comment-->
+  <body  topmargin= "0" leftmargin="0"> 
+    <div id="centerwrapper">
+    <div id="root" style="width:fit-content; height:fit-content;"
+      <div class="topnav"> <!--nav-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+      </div>
+
       <div>
-          <img src="tobias.jpg">
-          <div class="headertext">
+          <img id="img1" src="tobias.jpg" alt="tobias">
+          <img id="img2" src="tobias.jpg" alt="tobias">
+          <div class ="headertext">
             <h3>Howdy, I'm</h3>
             <h1>Zoe Triantafilou</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua re et dolore magnre et dolore magn.</p>
           </div>
       </div>
-      <div class="about">
-            <div class="links">
-                <ul>
-                    <a href="google.com">
-                        Github
-                    </a>
-                </ul>
-            </div>
-            
-      </div>
+    </div>
+    </div>
+      
   </body>
   
 </html>
